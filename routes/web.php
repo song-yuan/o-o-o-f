@@ -16,6 +16,11 @@ Route::get('/', function () {
 });
 Route::get('/', 'HomeController@index')->name("main");
 
+Route::group(['prefix' => 'auth'], function () {
+    Route::get('/register', 'Auth\RegisterController@index');
+    Route::post('/create', 'Auth\RegisterController@create');
+});
+
 Route::group(['prefix' => 'article'], function () {
     Route::get('/', 'ArticleController@index');
     Route::get('/{single}', 'ArticleController@single');
@@ -24,5 +29,5 @@ Route::group(['prefix' => 'article'], function () {
 
 Route::group(['prefix' => 'order'], function () {
     Route::get('/', 'OrderController@index');
-    Route::get('/view/{id}', 'ArticleController@view');
+    Route::post('/search', 'OrderController@search');
 });

@@ -143,39 +143,39 @@
                 
                 <div class="form">
                 	<form action="#" />
-                    	<div class="column">
-                        	<p class="label">Login</p>
-                            <div class="field"><input type="text" /></div>
-                        </div>
+                            <div class="column">
+                                <p class="label">用户名</p>
+                                <div class="field"><input type="text" /></div>
+                            </div>
+
+                            <div class="column">
+                                <p class="label">密 码</p>
+                                <div class="field"><input type="password" /></div>
+                            </div>
                         
-                        <div class="column">
-                        	<p class="label">Password</p>
-                            <div class="field"><input type="password" /></div>
-                        </div>
-						
-						<div class="column_2">
+                        <div class="column_2">
                             <div class="remember">
-                            	<div class="checkbox"><input type="checkbox" /></div>
-                                <div class="remember_label"><p>Remember me</p></div>
+                                <div class="checkbox"><input type="checkbox" /></div>
+                                <div class="remember_label"><p>记住我</p></div>
                             </div>
                         </div>
                         
                         <div class="column_2">
-                            <p class="forgot_pass"><a href="#">Forgot password?</a></p>
+                            <p class="forgot_pass"><a href="#">忘记密码?</a></p>
                         </div>
                         
                         <div class="column button">
-                            <a href="#" class="enter"><span>Login</span></a>
+                            <a href="#" class="enter"><span>登 录</span></a>
                         </div>
                         
                         <div class="clearboth"></div>
                     </form>
                 </div>
-                
-                <div class="subtitle"><p>SIGN IN AS A USER</p></div>
-                
-                <div class="fb_button"><a href="#"><img src="<?php echo asset('layout/images/button_fb_login.png');?>" alt="" /></a></div>
-                <div class="text"><p>Use your account on the social network Facebook, to create a profile on BusinessPress</p></div>
+                <div class="subtitle"><p>注册新会员</p></div>
+                <div class="fb_button" style="padding:0;">
+                    <a href="#"><img src="<?php echo asset('layout/images/button_fb_login.png');?>" alt="" /></a>
+                </div>
+                <div class="text"><p>您可以使用社交账号直接登陆</p></div>
             </div>
         </div>
     </div>

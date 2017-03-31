@@ -15,4 +15,9 @@ class HomeController extends Controller
             'news2' => $news2
         ));
     }
+    
+    
+    public function captcha() {
+        return captcha_src();
+    }
 }

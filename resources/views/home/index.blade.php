@@ -70,11 +70,12 @@
                 </p>
 
                 <div class="block_contact_form">
-                    <form id="contact_form" action="php/contact_form.php" />
+                    <form id="order_form" method="POST" action="<?php echo url('order/search');?>" />
+                        <input type="hidden" name="_token" value="<?php echo csrf_token();?>" >
                         <div class="textarea" style="width:auto;height:auto;border:2px dotted">
-                            <textarea rows="4" cols="40" name="message" style="width:auto;height:auto;" ></textarea>
+                            <textarea rows="4" cols="40" name="order_sns" style="width:auto;height:auto;" ></textarea>
                         </div>
-                        <input type="submit" class="general_button" value="跟 踪" />
+                        <input type="submit" id="search_btn" class="general_button" value="跟 踪" />
                     </form>
                     <img src="<?php echo asset('images/contact_us.jpg');?>" alt="联系我们"/>
                 </div>

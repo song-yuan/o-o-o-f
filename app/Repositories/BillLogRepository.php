@@ -19,8 +19,4 @@ class BillLogRepository extends BaseRepository{
 		return Validator::make($data, $this->rule, trans('bills'));
 	}
     
-    public function lists($billSn) {
-        return $this->model->where('bill_sn', '=', $billSn)->orderBy('log_id', 'desc')->get();
-    }
-    
 }

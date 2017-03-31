@@ -11,7 +11,7 @@
                                 </ul>
                             </div>
                         </div>
-
+<!--
                         <div class="fr">
                         	<div class="block_top_menu">
                             	<ul>
@@ -20,7 +20,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+-->                        
                     	<div class="clearboth"></div>
                     </div>
                 </section>
@@ -81,8 +81,11 @@
                                     </ul>
                                 </li>
 							  	<li><a href="<?php echo url('article');?>">新闻中心</a></li>
+                                
+                                <!--
 							  	<li><a href="<?php echo url('contact');?>">联系我们</a></li>
 							  	<li><a href="<?php echo url('order');?>">在线下单</a></li>
+                                -->
                             </ul>
 						</nav>
                     </div>
