@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>BusinessNews</title>
+<title>庄远国际物流 - @yield('title')</title>
 
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -112,6 +112,18 @@
     }
     .bio ul li a:hover {
         color:#f24024;
+    }
+    
+    .my_article_list a span.article-title {
+        color: #2d2d2d;
+        width: 70%;
+        display: inline-block;
+        float: none;
+        overflow: hidden;
+        font-weight: 500;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 </style>
 @show

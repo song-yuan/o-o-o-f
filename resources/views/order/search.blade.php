@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Main page')
+@section('title', '快递查询')
 @section('styles')
 @parent
 @endsection

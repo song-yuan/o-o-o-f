@@ -24,4 +24,10 @@ class ArticleRepository extends BaseRepository{
     public function get($cat = 1, $limit = 5) {
         return $this->model->where('category_id', '=', $cat)->limit($limit)->orderBy('article_id', 'desc')->get();
     }
+    
+    public function getAll($cats, $pageSize = 10) {
+        return $this->model->whereIn('category_id', $cats)
+                ->orderBy('article_id', 'desc')
+                ->paginate($pageSize);
+    }
 }

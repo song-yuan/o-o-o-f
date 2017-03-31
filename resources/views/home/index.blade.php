@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Main page')
+@section('title', '欢迎来到庄远')
 @section('styles')
 @parent
 @endsection
@@ -95,7 +95,7 @@
                         <?php foreach($news1 as $n1):?>
                         <li>
                             <a href="<?php echo url('article/view', array($n1->article_id));?>">
-                                <?php echo $n1->title;?>
+                                <span class="article-title"><?php echo $n1->title;?></span>
                                 <span><?php echo $n1->created_at;?></span>
                             </a>
                         </li>
@@ -104,12 +104,12 @@
                 </div>
             </div>
                 <div class="my_article_list">
-                    <div class="title"><p>庄远动态</p></div>
+                    <div class="title"><p>行业动态</p></div>
                     <ul>
                         <?php foreach($news2 as $n2):?>
                         <li>
                             <a href="<?php echo url('article/view', array($n2->article_id));?>">
-                                <?php echo $n2->title;?>
+                                <span class="article-title"><?php echo $n2->title;?></span>
                                 <span><?php echo $n2->created_at;?></span>
                             </a>
                         </li>
