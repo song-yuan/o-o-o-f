@@ -3,6 +3,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Repositories\UserRepository;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Auth\Guard;
+use Captcha;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -28,15 +30,16 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
-
+    public $auth;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Guard $auth)
     {
         $this->middleware('guest');
+        $this->auth = $auth;
     }
 
     /**
@@ -62,19 +65,25 @@ class RegisterController extends Controller
      */
     protected function create(Request $request)
     {
+        $userData = $request->all();
+        $userRep = new UserRepository();
         
-        
-        
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+		$validator = $userRep->validator($userData);
+		if ($validator->fails()) {
+            return redirect()->back()->withInput($userData)->withErrors($validator);
+		}
+        $user = $userRep->create(array(
+            
+        ));
+		$this->auth->login($user);
     }
     
     
     public function index() {
-        return view('auth.register');
+        $captcha = Captcha::src();
+        return view('auth.register', array(
+            "captcha" => $captcha
+        ));
     }
     
 }

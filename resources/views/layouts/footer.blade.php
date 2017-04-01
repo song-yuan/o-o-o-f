@@ -22,28 +22,28 @@
                                 <div class="block_flickr_footer">
                                 	<ul>
                                         <li>
-                                            <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/dhl_1.png');?>" alt="" /></a>
+                                            <a href="http://www.cn.dhl.com/zh/logistics/freight_transportation/ocean_freight.html" target="_blank"><img src="<?php echo asset('images/partners/dhl_1.png');?>" alt="" /></a>
                                         </li>
                                         <li>
-                                            <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/ups_1.png');?>" alt="" /></a>
+                                            <a href="https://www.ups.com/cn" target="_blank"><img src="<?php echo asset('images/partners/ups_1.png');?>" alt="" /></a>
                                         </li>
                                         <li>
-                                            <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/fedex_1.png');?>" alt="" /></a>
+                                            <a href="http://www.fedex.com/cn/" target="_blank"><img src="<?php echo asset('images/partners/fedex_1.png');?>" alt="" /></a>
                                         </li>
                                         <li>
-                                            <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/ems_1.png');?>" alt="" /></a>
+                                            <a href="http://www.ems.com.cn" target="_blank"><img src="<?php echo asset('images/partners/ems_1.png');?>" alt="" /></a>
                                         </li>
                                         <li>
                                             <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/ems_xiaobao_1.png');?>" alt="" /></a>
                                         </li>
                                         <li>
-                                            <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/tnt_1.png');?>" alt="" /></a>
+                                            <a href="https://www.tnt.com/express/zh_cn/site/home.html" target="_blank"><img src="<?php echo asset('images/partners/tnt_1.png');?>" alt="" /></a>
                                         </li>
                                         <li>
-                                            <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/jp_youbian_1.png');?>" alt="" /></a>
+                                            <a href="http://www.post.japanpost.jp/int/ems/index.html" target="_blank"><img src="<?php echo asset('images/partners/jp_youbian_1.png');?>" alt="" /></a>
                                         </li>
                                         <li>
-                                            <a href="http://www.flickr.com/" target="_blank"><img src="<?php echo asset('images/partners/amax_1.png');?>" alt="" /></a>
+                                            <a href="http://www.aramex.com" target="_blank"><img src="<?php echo asset('images/partners/amax_1.png');?>" alt="" /></a>
                                         </li>
                                     </ul>
                                 </div>
