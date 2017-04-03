@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\BillRepository;
 use App\Repositories\BillLogRepository;
+use View;
 
 class OrderController extends Controller
 {
     public $rep;
     public $logRep;
     public function __construct() {
-        parent::__construct();
         $this->rep = new BillRepository();
         $this->logRep = new BillLogRepository();
         View::share('active','order');

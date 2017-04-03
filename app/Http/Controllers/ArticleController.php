@@ -41,7 +41,8 @@ class ArticleController extends Controller
         }
         
         return view('article.view', array(
-            'article' => $article
+            'article' => $article,
+            'id' => $id
         ));
     }
     

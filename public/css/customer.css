@@ -88,3 +88,8 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+    
+    .sidebar .block_sidebar_menu ul li.active {
+        color:#f24024;
+    }
+    

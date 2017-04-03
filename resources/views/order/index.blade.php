@@ -67,7 +67,6 @@
                 </div>
             </div>
             <div class="sidebar">
-            @include('layouts.sidebar_menu')
             @include('layouts.contact')
             </div>
             <div class="clearboth"></div>

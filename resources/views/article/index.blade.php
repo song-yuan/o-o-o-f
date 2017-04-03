@@ -43,7 +43,7 @@
             </div>
 
             <div class="sidebar">
-            @include('layouts.sidebar_menu')
+            @include('layouts.sidebar_menu', ['id' => 0])
             @include('layouts.contact')
             </div>
 
