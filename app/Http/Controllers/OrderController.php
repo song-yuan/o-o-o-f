@@ -10,8 +10,10 @@ class OrderController extends Controller
     public $rep;
     public $logRep;
     public function __construct() {
+        parent::__construct();
         $this->rep = new BillRepository();
         $this->logRep = new BillLogRepository();
+        View::share('active','order');
     }
     public function index() {
         return view('order.index');

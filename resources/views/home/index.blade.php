@@ -31,7 +31,7 @@
                             </li>
                             <li>
                                 <div class="slide">
-                                    <img src="images/timg.jpg" alt="" />
+                                    <img src="<?php echo asset('images/timg.jpg');?>" alt="" />
                                     <div class="caption">
                                         <p class="title">快速送达!</p>
                                         <p>国际快递专家确保您的快递全程无忧</p>
@@ -41,7 +41,7 @@
 
                             <li>
                                 <div class="slide">
-                                    <img src="images/hangkong.jpg" alt="" />
+                                    <img src="<?php echo asset('images/hangkong.jpg');?>" alt="" />
                                     <div class="caption">
                                         <p class="title">更好的货物追踪可视性</p>
                                         <p>管理您复杂的全球供应链</p>
@@ -50,7 +50,7 @@
                             </li>
                             <li>
                                 <div class="slide">
-                                    <img src="images/qiche.jpg" alt="" />
+                                    <img src="<?php echo asset('images/qiche.jpg');?>" alt="" />
                                     <div class="caption">
                                         <p class="title">更好的货物追踪可视性</p>
                                         <p>管理您复杂的全球供应链</p>
@@ -129,51 +129,51 @@
                     <ul class="slides">
                         <li>
                             <div class="block_best_material_post">
-                                <div class="f_pic"><a href="http://www.cn.dhl.com/zh/logistics/freight_transportation/ocean_freight.html" class="w_hover"><img src="<?php echo asset('images/partners/dhl.jpg');?>" alt="" /><span></span></a></div>
+                                <div class="f_pic"><a href="http://www.cn.dhl.com/zh/logistics/freight_transportation/ocean_freight.html" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/dhl.jpg');?>" alt="" /><span></span></a></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="block_best_material_post">
-                                <div class="f_pic"><a href="http://www.fedex.com/cn/" class="w_hover"><img src="<?php echo asset('images/partners/fedex.jpg');?>" alt="" /><span></span></a></div>
+                                <div class="f_pic"><a href="http://www.fedex.com/cn/" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/fedex.jpg');?>" alt="" /><span></span></a></div>
                             </div>
                         </li>
                         <li>
                             <div class="block_best_material_post">
-                                <div class="f_pic"><a href="https://www.ups.com/cn" class="w_hover"><img src="<?php echo asset('images/partners/ups.jpg');?>" alt="" /><span></span></a></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="block_best_material_post">
-                                <div class="f_pic"><a href="https://www.tnt.com/express/zh_cn/site/home.html" class="w_hover"><img src="<?php echo asset('images/partners/tnt.jpg');?>" alt="" /><span></span></a></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="block_best_material_post">
-                                <div class="f_pic"><a href="http://www.ems.com.cn" class="w_hover"><img src="<?php echo asset('images/partners/ems.jpg');?>" alt="" /><span></span></a></div>
+                                <div class="f_pic"><a href="https://www.ups.com/cn" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/ups.jpg');?>" alt="" /><span></span></a></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="block_best_material_post">
-                                <div class="f_pic"><a href="http://www.sf-express.com/cn/sc/" class="w_hover"><img src="<?php echo asset('images/partners/sf.jpg');?>" alt="" /><span></span></a></div>
+                                <div class="f_pic"><a href="https://www.tnt.com/express/zh_cn/site/home.html" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/tnt.jpg');?>" alt="" /><span></span></a></div>
                             </div>
                         </li>
                         <li>
                             <div class="block_best_material_post">
-                                <div class="f_pic"><a href="http://www.sto.cn/" class="w_hover"><img src="<?php echo asset('images/partners/sto.jpg');?>" alt="" /><span></span></a></div>
+                                <div class="f_pic"><a href="http://www.ems.com.cn" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/ems.jpg');?>" alt="" /><span></span></a></div>
                             </div>
                         </li>
 
                         <li>
                             <div class="block_best_material_post">
-                                <div class="f_pic"><a href="http://www.yto.net.cn/gw/index/index.html" class="w_hover"><img src="<?php echo asset('images/partners/yto.jpg');?>" alt="" /><span></span></a></div>
+                                <div class="f_pic"><a href="http://www.sf-express.com/cn/sc/" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/sf.jpg');?>" alt="" /><span></span></a></div>
                             </div>
                         </li>
                         <li>
                             <div class="block_best_material_post">
-                                <div class="f_pic"><a href="http://www.zjs.com.cn/" class="w_hover"><img src="<?php echo asset('images/partners/zjs.jpg');?>" alt="" /><span></span></a></div>
+                                <div class="f_pic"><a href="http://www.sto.cn/" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/sto.jpg');?>" alt="" /><span></span></a></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="block_best_material_post">
+                                <div class="f_pic"><a href="http://www.yto.net.cn/gw/index/index.html" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/yto.jpg');?>" alt="" /><span></span></a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block_best_material_post">
+                                <div class="f_pic"><a href="http://www.zjs.com.cn/" class="w_hover" target="_blank"><img src="<?php echo asset('images/partners/zjs.jpg');?>" alt="" /><span></span></a></div>
                             </div>
                         </li>
                     </ul>

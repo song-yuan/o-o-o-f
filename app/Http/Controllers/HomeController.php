@@ -5,6 +5,9 @@ use App\Repositories\ArticleRepository;
 
 class HomeController extends Controller
 {
+    public function __construct() {
+        parent::__construct();
+    }
     public function index() {
         $articleRep = new ArticleRepository();
         $news1 = $articleRep->get(2);

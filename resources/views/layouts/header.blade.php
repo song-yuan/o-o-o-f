@@ -59,8 +59,8 @@
                 	<div class="inner">
                     	<nav class="main_menu">
                         	<ul>
-								<li class="current_page_item"><a href="<?php echo url('/');?>">首页</a></li>
-							  	<li>
+								<li class="<?php echo $active == 'home'?'current_page_item':''?>"><a href="<?php echo url('/');?>">首页</a></li>
+							  	<li class="<?php echo $active == 'aboutus'?'current_page_item':''?>">
                                     <a href="<?php echo url('article/view/1');?>">关于我们</a>
                                     <ul>
                                     	<li><a href="<?php echo url('article/view/1');?>">公司简介</a></li>
@@ -71,7 +71,7 @@
                                     </ul>
 
                                 </li>
-							  	<li>
+							  	<li class="<?php echo $active == 'business'?'current_page_item':''?>">
                                     <a href="<?php echo url('article/view/6');?>">主营业务</a>
                                     <ul>
                                     	<li><a href="<?php echo url('article/view/6');?>">国际快递</a></li>
@@ -80,11 +80,17 @@
                                         <!--<li><a href="<?php echo url('article/view/8');?>">陆运</a></li>-->
                                     </ul>
                                 </li>
-							  	<li><a href="<?php echo url('article');?>">新闻中心</a></li>
+							  	<li class="<?php echo $active == 'article'?'current_page_item':''?>">
+                                    <a href="<?php echo url('article');?>">新闻中心</a>
+                                </li>
                                 
                                 <!--
-							  	<li><a href="<?php echo url('contact');?>">联系我们</a></li>
-							  	<li><a href="<?php echo url('order');?>">在线下单</a></li>
+							  	<li class="<?php echo $active == 'contactus'?'current_page_item':''?>">
+                                    <a href="<?php echo url('contact');?>">联系我们</a>
+                                </li>
+							  	<li class="<?php echo $active == 'order'?'current_page_item':''?>">
+                                    <a href="<?php echo url('order');?>">在线下单</a>
+                                </li>
                                 -->
                             </ul>
 						</nav>
