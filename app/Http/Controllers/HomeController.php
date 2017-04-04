@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 use App\Repositories\ArticleRepository;
-
+use Illuminate\Http\Request;
+use Captcha;
 class HomeController extends Controller
 {
-    public function __construct() {
+    public function __construct(Request $request) {
+//        $user = $request->user();
+//        var_dump($user);exit;
         parent::__construct();
     }
     public function index() {
@@ -19,8 +22,7 @@ class HomeController extends Controller
         ));
     }
     
-    
     public function captcha() {
-        return captcha_src();
+        return Captcha::create('default');
     }
 }

@@ -11,16 +11,19 @@
                                 </ul>
                             </div>
                         </div>
-<!--
                         <div class="fr">
                         	<div class="block_top_menu">
                             	<ul>
-                                	<li class="current"><a href="#login" class="open_popup" style="color:#555;">登 录</a></li>
+                                    <?php if($user):?>
+                                    <li class="current"><a href="javascript:;" style="color:#555;">[<?php echo $user->user_name;?>] 欢迎光临庄远国际</a></li>
+                                    <li><a href="<?php echo url('auth/logout');?>" style="color:#555;">安全退出</a></li>
+                                    <?php else:?>
+                                	<li class="current"><a href="<?php echo url('auth/login');?>" style="color:#555;">登 录</a></li>
                                     <li><a href="<?php echo url('auth/register');?>" style="color:#555;">会员注册</a></li>
+                                    <?php endif;?>
                                 </ul>
                             </div>
                         </div>
--->                        
                     	<div class="clearboth"></div>
                     </div>
                 </section>

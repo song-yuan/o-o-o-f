@@ -89,7 +89,21 @@
         white-space: nowrap;
     }
     
-    .sidebar .block_sidebar_menu ul li.active {
+    .sidebar .block_sidebar_menu ul li.active a {
         color:#f24024;
     }
     
+    .block_registration .col_3 {
+        width:100%;
+    }
+    .block_registration .col_3 ul li{
+        line-height: 24px;
+        font-size: 12px;
+        color:#f24024;
+    }
+    #captcha {
+        display: inline-block;
+        width:100px;
+        border:1px solid #e6e6e6;
+        margin-left:0;
+    }

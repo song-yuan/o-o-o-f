@@ -15,10 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/', 'HomeController@index')->name("main");
+Route::get('/captcha', 'HomeController@captcha');
 
 Route::group(['prefix' => 'auth'], function () {
     Route::get('/register', 'Auth\RegisterController@index');
-    Route::post('/create', 'Auth\RegisterController@create');
+    Route::post('/register/create', 'Auth\RegisterController@create');
+    
+    Route::get('/login', 'Auth\LoginController@index');
+    Route::post('/', 'Auth\LoginController@login');
+    Route::get('/logout', 'Auth\LoginController@logout');
 });
 
 Route::group(['prefix' => 'article'], function () {
